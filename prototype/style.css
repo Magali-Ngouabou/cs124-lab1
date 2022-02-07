@@ -1,6 +1,26 @@
-#taskBar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+h1 {
+    padding-left: 1em;
+}
+
+.taskList {
     list-style: none;
+}
+
+span {
+    /*padding-left: 2.5em;*/
+    margin: 2.5em;
+}
+
+span:hover {
+    background-color: orange;
+    color: white;
+}
+
+#delete {
+    margin-left: 3em;
+}
+
+#highlighted {
+    background-color: orange;
+    color: white;
 }
