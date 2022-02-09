@@ -2,15 +2,14 @@ body {
     background-color: #222629;
     color: white;
     margin: 0;
-    margin-top: 0;
-    font-family: "Lucida Console";
+    font-family: "Roboto", sans-serif;
 }
 
 h1 {
-    padding-left: 1em;
+    padding-left: 1.2em;
     padding-top: 1em;
     padding-bottom: .5em;
-    font-family: "Arial";
+    font-family: "Arial", sans-serif;
     color: #86C232;
     background-color: #333;
     margin-top: 0;
@@ -19,8 +18,7 @@ h1 {
 
 ul {
     list-style: none;
-    font-family: "Lucida Console";
-    font-weight: 400;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
 }
 
@@ -31,6 +29,7 @@ ul li {
 .fa-edit {
     margin-left: 8px;
     font-size: 10px;
+    vertical-align: middle;
 }
 
 #addItem {
@@ -43,30 +42,45 @@ ul li {
     list-style: none;
 }
 
-span {
-    /*padding-left: 2.5em;*/
-
-}
-
-#delete {
-    margin-left: 3em;
-}
 
 button {
+    margin-left: 3em;
     background-color: darkred;
-    font-family: "Courier New";
+    box-shadow: black;
+    font-family: "Roboto", sans-serif;
     color: white;
     border: none;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 #uncomplete {
     margin: 3em 1em 3em 3.1em;
     font-size: 14px;
 }
+.fa-info-circle {
+    color: #86C232;
+}
+
+p {
+    margin-left: 3em;
+    margin-bottom: 2em;
+    width: 72%;
+    font-size: 14px;
+}
+
+#guide {
+    color: #86C232;
+    font-weight: 600;
+}
+
+#nextPage {
+    margin: 3em;
+    background-color: #86C232;
+}
 
 input[type=text] {
-    font-family: "Lucida Console";
+    font-family: "Roboto", sans-serif;
     color: white;
     background-color: transparent;
     margin-left: 7px;
@@ -94,6 +108,10 @@ input[class=toggle] {
     cursor: pointer;
 }
 
+input[type=checkbox] {
+    vertical-align: middle;
+}
+
 input[type=checkbox]:focus {
     outline: 0;
 }
@@ -103,7 +121,8 @@ input[type=checkbox]:focus {
     width: 37px;
     border-radius: 16px;
     display: inline-block;
-    position: absolute;
+    vertical-align: middle;
+    position: relative;
     margin: 0;
     border: 2px solid #474755;
     background: linear-gradient(180deg, #2D2F39 0%, #1F2027 100%);
