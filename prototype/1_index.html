@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Test-cs</title>
     <!--    <link rel="stylesheet" href="style.css">-->
@@ -11,11 +12,13 @@
     <h1>Tasks</h1>
 </div>
 
-<span id="uncomplete">Uncompleted items </span> <input type="checkbox" class="toggle" checked>
+<span id="uncomplete">Uncompleted items </span> <input type="checkbox" class="toggle">
 
 
 <ul>
-    <label id="addItem"> <input type="checkbox" class="greenCheck"> Add item</label> <br><br>
+    <label id="addItem">
+        <input type="checkbox" class="greenCheck"><input type="text" class="inputItem" placeholder="Add item">
+    </label> <br><br>
 </ul>
 
 <button id="delete">Delete completed items </button>

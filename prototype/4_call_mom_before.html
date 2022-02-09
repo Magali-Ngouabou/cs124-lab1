@@ -2,18 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <title>Title</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1>Tasks</h1>
-<span>Uncompleted items</span>
-<ul class="taskList">
-  <li><input type="checkbox"> Buy new  John Grisham book</li>
-  <li><input type="checkbox"> Eat Lunch </li>
-  <li><input type="checkbox"> Call Mom</li> <br>
-  <input type="text" id="listItem" name="item1"> <button>Add to list</button>
 
+<span id="uncomplete">Uncompleted items </span> <input type="checkbox" class="toggle">
+
+<ul>
+  <li><input type="checkbox"> Buy new  John Grisham book <i class='far fa-edit'></i></li>
+  <li><input type="checkbox"> Eat Lunch <i class='far fa-edit'></i></li>
+  <li><input type="checkbox"> Call Mom <i class='far fa-edit'></i></li>
+  <label id="addItem">
+    <input type="checkbox" class="greenCheck"><input type="text" class="inputItem" placeholder="Add item">
+  </label> <br><br>
 </ul>
 
 <button id="delete">Delete completed items </button>
