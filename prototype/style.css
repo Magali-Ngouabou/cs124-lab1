@@ -1,5 +1,26 @@
+body {
+    background-color: #222629;
+    color: white;
+    margin: 0;
+    margin-top: 0;
+    font-family: "Lucida Console";
+}
+
 h1 {
     padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: .5em;
+    font-family: "Arial";
+    color: #86C232;
+    background-color: #333;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+#addItem {
+    margin-left: 0;
+    font-size: 14px;
+    color: #6B6E70;
 }
 
 .taskList {
@@ -11,16 +32,71 @@ span {
     margin: 2.5em;
 }
 
-span:hover {
-    background-color: orange;
-    color: white;
-}
 
 #delete {
     margin-left: 3em;
 }
 
-#highlighted {
-    background-color: orange;
+button {
+    background-color: darkred;
+    font-family: "Courier New";
     color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+#uncomplete {
+   margin-right: 15px;
+}
+
+input[class=greenCheck] {
+    display: inline-block;
+    position: relative;
+    background-color: #86C232;
+}
+
+.greenCheck {
+    background: #86C232;
+}
+
+input[class=toggle] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+}
+
+input[type=checkbox]:focus {
+    outline: 0;
+}
+
+.toggle {
+    height: 16px;
+    width: 37px;
+    border-radius: 16px;
+    display: inline-block;
+    position: absolute;
+    margin: 0;
+    border: 2px solid #474755;
+    background: linear-gradient(180deg, #2D2F39 0%, #1F2027 100%);
+    transition: all 0.2s ease;
+}
+.toggle:after {
+    content: "";
+    position: absolute;
+    top: -.5px;
+    left: .5px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 1px 2px rgba(44, 44, 44, 0.2);
+    transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
+}
+.toggle:checked {
+    border-color: #86C232;
+}
+.toggle:checked:after {
+    transform: translatex(20px);
 }

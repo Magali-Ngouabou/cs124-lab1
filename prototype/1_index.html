@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Test-cs</title>
     <!--    <link rel="stylesheet" href="style.css">-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Tasks</h1>
-<span>Uncompleted items</span>
-<ul>
-    <input type="text" id="listItem" name="item1"> <button>Add to list</button>
+<div id="titleBar">
+    <h1>Tasks</h1>
+</div>
 
+<span id="uncomplete">Uncompleted items </span> <input type="checkbox" class="toggle" checked>
+
+
+<ul>
+    <label id="addItem"> <input type="checkbox" class="greenCheck"> Add item</label> <br><br>
 </ul>
 
 <button id="delete">Delete completed items </button>
