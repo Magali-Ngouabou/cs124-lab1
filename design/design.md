@@ -32,10 +32,14 @@ We decided convention could be kept in this instance, preserving the
 checkmark in the checkbox against the blue background. It is not especially distracting in
 our design.
 
-We also didn't realize how iframes could be used for the walk through so this is how the 
-page initially looked before properly formatting them into an iframe
+Orderd all the different tasks the lab asked to be completed into an index of 6 different pages,
+each with a walkthrough on how the task would be performed
 
-![Image of task list page](task_list_image.png)
+![Image of task list page](index.png)
+
+An example of one of the pages the index buttons link to:
+
+![Image of task list page](index_item_1.png)
 
 #Accomplishments
 The final output of our pages appears pretty accessible. Proud of the toggle
