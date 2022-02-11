@@ -16,6 +16,17 @@ h1 {
     overflow: hidden;
 }
 
+h2 {
+    margin-left: 30px;
+}
+
+#return {
+    background-color: #86C232;
+    width: 120;
+    height: 25;
+}
+
+
 ul {
     list-style: none;
     font-family: "Roboto", sans-serif;
@@ -38,6 +49,17 @@ ul li {
     color: #6B6E70;
 }
 
+#indexItems {
+    list-style: none;
+}
+
+#indexItem {
+    background-color: #86C232;
+    width: 300px;
+    height: 30px;
+    margin-top: 20px;
+    font-size: 18px;
+}
 .taskList {
     list-style: none;
 }
@@ -74,10 +96,17 @@ p {
     font-weight: 600;
 }
 
-#nextPage {
-    margin: 3em;
-    background-color: #86C232;
+
+.iframes {
+    display: flex;
+    margin-left: 30px;
 }
+
+.iframes p {
+    font-size: 18px;
+    width: 800;
+}
+
 
 input[type=text] {
     font-family: "Roboto", sans-serif;
